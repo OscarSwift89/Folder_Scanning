@@ -36,6 +36,7 @@ A simple Python/​Tkinter application that lets you visually select a folder, s
 
     ```bash
     python folder_tree_gui.py
+    ```
 
 or, if you made it executable:
 
@@ -92,21 +93,20 @@ Exclude Patterns:
 ---
 
 ## 🔧 How It Works
-scan_folder(path, exclude_patterns, prefix='')
-Recursively walks path, skipping any entry matching your glob patterns, and builds an ASCII‑style tree.
+    scan_folder(path, exclude_patterns, prefix='')
+    Recursively walks path, skipping any entry matching your glob patterns, and builds an ASCII‑style tree.
 
-Tkinter UI
+    Tkinter UI Components:
 
-Entry fields for source folder, output path, and exclude patterns
+    Entry fields for source folder, output path, and exclude patterns
 
-filedialog for browsing folders/files
+    filedialog for browsing folders and files
 
-messagebox for success/error notifications
-
+    messagebox for success/error notifications
 ---
 
 ## 📝 License
-Distributed under the MIT License. See LICENSE for details.
+    Distributed under the MIT License. See LICENSE for details.
 
-Author: Oscar Student Tutor
-Date: 2025-04-20
+    Author: Oscar Student Tutor
+    Date: 2025-04-20
