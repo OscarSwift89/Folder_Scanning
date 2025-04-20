@@ -27,3 +27,81 @@ A simple Python/​Tkinter application that lets you visually select a folder, s
    ```bash
    git clone https://github.com/<your‑username>/folder-tree-scanner-gui.git
    cd folder-tree-scanner-gui
+
+
+## 🎮 Usage
+Launch the GUI
+
+bash
+Copy
+Edit
+python folder_tree_gui.py
+or, if you made it executable:
+
+bash
+Copy
+Edit
+./folder_tree_gui.py
+Select a Source Folder
+
+Click Browse… next to Source Folder
+
+Navigate and choose the directory you want to scan
+
+Set Output File
+
+Click Browse… next to Output File
+
+Choose a .txt filename (e.g. tree.txt, project_structure.txt)
+
+Configure Exclusions
+
+In Exclude Patterns, enter glob patterns separated by commas
+
+Example: *.tmp,*.hash,build,venv
+
+Scan & Save
+
+Click Scan
+
+A success dialog will confirm when the tree is written
+
+## 📝 Example
+Exclude Patterns:
+
+markdown
+Copy
+Edit
+*.log,*.pyc,__pycache__
+Output (tree.txt):
+
+css
+Copy
+Edit
+/home/user/myproject
+├── README.md
+├── folder_tree_gui.py
+├── docs
+│   ├── user_guide.md
+│   └── images
+└── src
+    ├── main.py
+    └── utils.py
+
+## 🔧 How It Works
+scan_folder(path, exclude_patterns, prefix='')
+Recursively walks path, skipping any entry matching your glob patterns, and builds an ASCII‑style tree.
+
+Tkinter UI
+
+Entry fields for source folder, output path, and exclude patterns
+
+filedialog for browsing folders/files
+
+messagebox for success/error notifications
+
+## 📝 License
+Distributed under the MIT License. See LICENSE for details.
+
+Author: Oscar Student Tutor
+Date: 2025-04-20
