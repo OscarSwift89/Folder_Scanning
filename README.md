@@ -28,19 +28,19 @@ A simple Python/​Tkinter application that lets you visually select a folder, s
    git clone https://github.com/<your‑username>/folder-tree-scanner-gui.git
    cd folder-tree-scanner-gui
 
+---
 
 ## 🎮 Usage
-Launch the GUI
 
-bash
-Copy
-Edit
-python folder_tree_gui.py
+**Launch the GUI**
+
+    ```bash
+    python folder_tree_gui.py
+
 or, if you made it executable:
 
-bash
-Copy
-Edit
+
+    ```bash
 ./folder_tree_gui.py
 Select a Source Folder
 
@@ -66,27 +66,30 @@ Click Scan
 
 A success dialog will confirm when the tree is written
 
+---
+
 ## 📝 Example
 Exclude Patterns:
 
-markdown
-Copy
-Edit
-*.log,*.pyc,__pycache__
-Output (tree.txt):
+    ```markdown
 
-css
-Copy
-Edit
-/home/user/myproject
-├── README.md
-├── folder_tree_gui.py
-├── docs
-│   ├── user_guide.md
-│   └── images
-└── src
-    ├── main.py
-    └── utils.py
+    *.log,*.pyc,__pycache__
+    Output (tree.txt):
+
+    css
+    Copy
+    Edit
+    /home/user/myproject
+    ├── README.md
+    ├── folder_tree_gui.py
+    ├── docs
+    │   ├── user_guide.md
+    │   └── images
+    └── src
+        ├── main.py
+        └── utils.py
+
+---
 
 ## 🔧 How It Works
 scan_folder(path, exclude_patterns, prefix='')
@@ -99,6 +102,8 @@ Entry fields for source folder, output path, and exclude patterns
 filedialog for browsing folders/files
 
 messagebox for success/error notifications
+
+---
 
 ## 📝 License
 Distributed under the MIT License. See LICENSE for details.
