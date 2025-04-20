@@ -106,8 +106,9 @@ Exclude Patterns:
 ---
 
 ## 📝 License
-    ![GitHub](https://img.shields.io/badge/Python-3.8%2B-blue)
-    ![GitHub](https://img.shields.io/badge/License-MIT-green)
+=======
+![GitHub](https://img.shields.io/badge/Python-3.8%2B-blue)
+![GitHub](https://img.shields.io/badge/License-MIT-green)
 
     Distributed under the MIT License. See LICENSE for details.
     Author: Oscar Student Tutor
